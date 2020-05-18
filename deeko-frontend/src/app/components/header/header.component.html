@@ -1,0 +1,29 @@
+<div class="toolbar primary-color" role="banner">
+<img
+  width="150"
+  height="auto"
+  alt="Deeko Logo"
+  src="../../../assets/deeko_logo.png">
+  <span></span>
+  <div fxFlex fxLayoutAlign="end">
+    <div fxLayout="row">
+      <div fxLayoutAlign="center center">
+        <p>Martijn</p>
+      </div>
+      <div>
+        <img
+          src="../../../assets/martijn.jpg"
+          alt="profile picture"
+          class="profile-pic">
+      </div>
+      <button mat-icon-button class="menu-icon"[matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>
